@@ -1,0 +1,19 @@
+.todo-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.todo-container input {
+  accent-color: #18b10f;
+}
+
+.todo-container button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
