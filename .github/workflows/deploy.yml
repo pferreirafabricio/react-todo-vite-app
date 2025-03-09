@@ -16,6 +16,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           npm ci
+          export VITE_BASE_PATH=/react-todo-vite-app/
           npm run build
 
       - name: Deploy 🚀
