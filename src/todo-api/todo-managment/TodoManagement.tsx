@@ -1,11 +1,11 @@
-import { useState } from "react";
 import TodoForm from "../../components/todo-form/TodoForm";
 import { Task } from "./TodoManagment.types";
 import "./TodoManagement.styles.css";
 import TodoItem from "../todo-item/TodoItem";
+import usePersistentState from "../../core/hooks/usePersistentState";
 
 export default function TodoManagement() {
-  const [tasks, setTasks] = useState<Task[]>([]);
+  const [tasks, setTasks] = usePersistentState<Task[]>("todos", []);
 
   function handleOnAdd(newTask: string) {
     const newId = (tasks[tasks.length - 1]?.id ?? 0) + 1;

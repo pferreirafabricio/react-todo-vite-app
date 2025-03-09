@@ -21,7 +21,7 @@ export default function TodoItem({
         onChange={() => onChange(todo.id)}
       />
       {todo.description}
-      <button onClick={() => onRemove(todo.id)}>❌</button>
+      <button title="Remove the task" onClick={() => onRemove(todo.id)}>❌</button>
     </div>
   );
 }
